@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: ljqk
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-yccy-tenant/byoc-app-btew/ljqk@sha256:07d3bc1a7291c7ac3ee146756039bd0cfd44d123a24d23aec95896d411811fd1
         name: my-java-quarkus
         ports:
         - containerPort: 8081
