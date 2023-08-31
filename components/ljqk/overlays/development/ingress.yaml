@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: ljqk
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ljqk
+    app.kubernetes.io/part-of: byoc-app-btew
+  name: ljqk
+spec:
+  rules:
+  - host: ljqk-byoc-yccy-tenant.apps.0acc2270a23b8f2ff54c.hypershift.aws-2.ci.openshift.org
+    http:
+      paths:
+      - backend:
+          service:
+            name: ljqk
+            port:
+              number: 8081
+        path: /
+        pathType: ImplementationSpecific
+status:
+  loadBalancer: {}
